@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,800;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -18,42 +18,41 @@
 
   <section>
     <div class="result flex">
-      <h1 class="header">Your Result</h1>
+      <h1 class="header ">Your Result</h1>
     
       <div class="circle flex">
-        <div class="result-number">76</div>
-        <div>of 100</div>
+        <div class="result-number weight-800">76</div>
+        <div class="whiteopac weight-700">of 100</div>
       </div>
 
       <h3>Great</h3>
 
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <p class="">You scored higher than 65% of the people who have taken these tests.</p>
     </div>
     
     <div class="summary flex">
-      <h2 class="header">Summary</h2>
+      <h2 class="header darkgray">Summary</h2>
     
-      <div class="summary-score">
-        Reaction
-        80 / 100
+      <div>
+        <div class="summary-score weight-700 lightred">
+          <span>Reaction</span>
+          <span class="lightgray"><span class="weight-800 darkgray">80</span> / 100</span>
+        </div>
+        <div class="summary-score weight-700 orangeyyellow">
+          <span>Memory</span>
+          <span class="lightgray"><span class="weight-800 darkgray">92</span> / 100</span>
+        </div>
+        <div class="summary-score weight-700 greenteal">
+          <span>Verbal</span>
+          <span class="lightgray"><span class="weight-800 darkgray">61</span> / 100</span>
+        </div>
+        <div class="summary-score weight-700 cobaltblue">
+          <span>Visual</span>
+          <span class="lightgray"><span class="weight-800 darkgray">72</span> / 100</span>
+        </div>
       </div>
     
-      <div class="summary-score">
-        Memory
-        92 / 100
-      </div>
-    
-      <div class="summary-score">
-        Verbal
-        61 / 100
-      </div>
-    
-      <div class="summary-score">
-        Visual
-        72 / 100
-      </div>
-    
-      <button>Continue</button>
+      <button class="weight-700">Continue</button>
     </div>
   </section>
   

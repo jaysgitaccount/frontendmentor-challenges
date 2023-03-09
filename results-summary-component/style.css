@@ -18,6 +18,13 @@
     --paleblue: hsl(221, 100%, 96%);
     --lightlavender: hsl(241, 100%, 89%);
     --darkgrayblue: hsl(224, 30%, 27%);
+
+    /* Colours with opacity */
+    --lightred-bg: hsla(0, 100%, 67%, 0.1);
+    --orangeyyellow-bg: hsla(39, 100%, 56%, 0.1);
+    --greenteal-bg: hsla(166, 100%, 37%, 0.1);
+    --cobaltblue-bg: hsla(234, 85%, 45%, 0.1);
+    --darkgrayblue-op: hsla(224, 30%, 27%, 0.5);
 }
 
 * {
@@ -44,33 +51,63 @@ body > section {
     margin: 0 auto;
     display: flex;
     background-color: var(--white);
-    box-shadow: 10px 15px 30px rgb(226, 226, 226);
-    width: 600px;
+    box-shadow: 10px 20px 40px rgb(226, 226, 226);
+    width: 650px;
+}
+
+h1, p {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+h3, button {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+button {
+    border: none;
+    height: 3rem;
+    border-radius: 999px;
+    background-color: var(--darkgrayblue);
 }
 
 .header {
     font-size: 1.3rem;
 }
 
-h2 {
-    width: 100%;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
 .circle {
     border-radius: 999px;
-    height: 7.5rem;
-    width: 7.5rem;
+    height: 8rem;
+    width: 8rem;
     border: 1px solid red;
 }
 
 .summary, .result {
     width: 50%;
-    padding: 30px;
+    padding: 35px;
     height: 25rem;
+    justify-content: space-between !important;
+}
+
+.summary-score {
+    height: 3rem;
+    margin: 0.7rem 0 0.7rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h2,
+.summary > *,
+button {
+    width: 100%;
 }
 
 .result {
@@ -78,13 +115,14 @@ h3 {
     background-color: var(--lightroyalblue);
 }
 
+.result-number {
+    font-size: 3rem;
+    color: white;
+}
+
 .summary {
     background-color: var(--white);
     border-radius: 0 20px 20px 0;
-}
-
-.summary-score {
-    border: 1px solid blue;
 }
 
 .attribution {
@@ -95,9 +133,51 @@ h3 {
     color: hsl(228, 45%, 44%);
 }
 
+/* Reusable classes */
+
 .flex {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.weight-800 {
+    font-weight: 800;
+}
+
+.lightred {
+    color: var(--lightred);
+    background-color: var(--lightred-bg);
+}
+
+.orangeyyellow {
+    color: var(--orangeyyellow);
+    background-color: var(--orangeyyellow-bg);
+}
+
+.greenteal {
+    color: var(--greenteal);
+    background-color: var(--greenteal-bg);
+}
+
+.cobaltblue {
+    color: var(--cobaltblue);
+    background-color: var(--cobaltblue-bg);
+}
+
+.darkgray {
+    color: var(--darkgrayblue);
+}
+
+.lightgray {
+    color: var(--darkgrayblue-op);
+}
+
+.whiteopac {
+    color: rgba(255, 255, 255, 0.4);
 }
