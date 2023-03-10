@@ -25,6 +25,11 @@
     --greenteal-bg: hsla(166, 100%, 37%, 0.1);
     --cobaltblue-bg: hsla(234, 85%, 45%, 0.1);
     --darkgrayblue-op: hsla(224, 30%, 27%, 0.5);
+
+    --bg-gradient: linear-gradient(
+        var(--lightslateblue),
+        var(--lightroyalblue)
+    );
 }
 
 * {
@@ -66,6 +71,7 @@ h3, button {
 
 h3 {
     font-size: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 
 button {
@@ -75,6 +81,10 @@ button {
     background-color: var(--darkgrayblue);
     font-family: 'Hanken Grotesk', 'Hanken_Grotesk';
     font-weight: 500;
+}
+
+button:hover {
+    background-image: var(--bg-gradient);
 }
 
 .header {
@@ -104,16 +114,13 @@ button {
 
 .result {
     border-radius: 20px;
-    background-image: linear-gradient(
-        var(--lightslateblue),
-        var(--lightroyalblue)
-    );
+    background-image: var(--bg-gradient);
 }
 
 .circle {
     border-radius: 999px;
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
     background-image: linear-gradient(var(--violetblue), var(--persianblue));
 }
 
