@@ -60,7 +60,7 @@ body > section {
 }
 
 h1, p {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--lightlavender);
     text-align: center;
 }
 
@@ -172,8 +172,9 @@ button:hover {
     color: var(--darkgrayblue-op);
 }
 
-.whiteopac {
-    color: rgba(255, 255, 255, 0.4);
+.lavender-transp {
+    color: var(--lightlavender);
+    opacity: 0.6;
 }
 
 /* JS classes */
