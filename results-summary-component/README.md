@@ -13,8 +13,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,7 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
+![](./screenshot_mobile.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -36,21 +35,17 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [LINK](https://github.com/jaysgitaccount/frontendmentor-challenges/tree/main/results-summary-component)
+- Live Site URL: [LINK](https://jaysgitaccount.github.io/frontendmentor-challenges/results-summary-component/index.html)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Vanilla JS
 
 ### What I learned
 
@@ -72,12 +67,10 @@ function findNode(node, string) {
 
     let searchChildren = Array.from(node.children).map(child => findNode(child, string))
 
-    // Look through results to see if anything returned a node
     for (let i = 0; i < searchChildren.length; i++) {
         if (searchChildren[i]) return searchChildren[i];
     }
 
-    // If you can't find anything that matches
     return null;
 }
 
@@ -86,6 +79,5 @@ console.log(findNode(clone.firstElementChild, 'score'))
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@jaysgitaccount](https://www.frontendmentor.io/profile/jaysgitaccount)
+- GitHub - [@jaysgitaccount](https://github.com/jaysgitaccount)
