@@ -43,7 +43,6 @@ body {
     font-family: 'Hanken Grotesk', 'Hanken_Grotesk';
     display: flex;
     align-items: center;
-    color: red;
 }
 
 body > section {
@@ -51,7 +50,7 @@ body > section {
     margin: 0 auto;
     display: flex;
     background-color: var(--white);
-    box-shadow: 10px 20px 40px rgb(226, 226, 226);
+    box-shadow: 10px 20px 50px var(--paleblue);
     width: 650px;
 }
 
@@ -74,17 +73,12 @@ button {
     height: 3rem;
     border-radius: 999px;
     background-color: var(--darkgrayblue);
+    font-family: 'Hanken Grotesk', 'Hanken_Grotesk';
+    font-weight: 500;
 }
 
 .header {
     font-size: 1.3rem;
-}
-
-.circle {
-    border-radius: 999px;
-    height: 8rem;
-    width: 8rem;
-    border: 1px solid red;
 }
 
 .summary, .result {
@@ -112,7 +106,17 @@ button {
 
 .result {
     border-radius: 20px;
-    background-color: var(--lightroyalblue);
+    background-image: linear-gradient(
+        var(--lightslateblue),
+        var(--lightroyalblue)
+    );
+}
+
+.circle {
+    border-radius: 999px;
+    height: 8rem;
+    width: 8rem;
+    background-image: linear-gradient(var(--violetblue), var(--persianblue));
 }
 
 .result-number {
@@ -150,26 +154,6 @@ button {
     font-weight: 800;
 }
 
-.lightred {
-    color: var(--lightred);
-    background-color: var(--lightred-bg);
-}
-
-.orangeyyellow {
-    color: var(--orangeyyellow);
-    background-color: var(--orangeyyellow-bg);
-}
-
-.greenteal {
-    color: var(--greenteal);
-    background-color: var(--greenteal-bg);
-}
-
-.cobaltblue {
-    color: var(--cobaltblue);
-    background-color: var(--cobaltblue-bg);
-}
-
 .darkgray {
     color: var(--darkgrayblue);
 }
@@ -180,4 +164,26 @@ button {
 
 .whiteopac {
     color: rgba(255, 255, 255, 0.4);
+}
+
+/* JS classes */
+
+.Reaction {
+    color: var(--lightred);
+    background-color: var(--lightred-bg);
+}
+
+.Memory {
+    color: var(--orangeyyellow);
+    background-color: var(--orangeyyellow-bg);
+}
+
+.Verbal {
+    color: var(--greenteal);
+    background-color: var(--greenteal-bg);
+}
+
+.Visual {
+    color: var(--cobaltblue);
+    background-color: var(--cobaltblue-bg);
 }

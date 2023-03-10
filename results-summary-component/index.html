@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <script type='module' src='./script.js'></script>
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -18,7 +20,7 @@
 
   <section>
     <div class="result flex">
-      <h1 class="header ">Your Result</h1>
+      <h1 class="header">Your Result</h1>
     
       <div class="circle flex">
         <div class="result-number weight-800">76</div>
@@ -27,7 +29,7 @@
 
       <h3>Great</h3>
 
-      <p class="">You scored higher than 65% of the people who have taken these tests.</p>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
     </div>
     
     <div class="summary flex">
@@ -50,6 +52,14 @@
           <span>Visual</span>
           <span class="lightgray"><span class="weight-800 darkgray">72</span> / 100</span>
         </div>
+        <template>
+          <div>
+            <span></span>
+            <span class="lightgray">
+              <span class="weight-800 darkgray"></span>
+            </span>
+          </div>
+        </template>
       </div>
     
       <button class="weight-700">Continue</button>
